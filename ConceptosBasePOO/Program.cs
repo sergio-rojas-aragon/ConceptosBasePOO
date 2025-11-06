@@ -2,6 +2,7 @@
 using ConceptosBasePOO.Abstraccion;
 using ConceptosBasePOO.AbstraccionInterfaces;
 using ConceptosBasePOO.Encapsulacion;
+using ConceptosBasePOO.Genericos;
 using ConceptosBasePOO.Herencia;
 using ConceptosBasePOO.Polimorfismo;
 
@@ -27,3 +28,11 @@ Console.WriteLine("Fin Encapsulacion");
 
 var polimorfismo = new UsoPolimorfismo();
 Console.WriteLine("Fin Polimorfismo");
+
+// Genericos
+
+var genericoBasico = new UsoGenericoBasico();
+var genericoRepositorio= new UsoGenericoRepositorio();
+var genericoRestricciones = new UsoGenericoRestricciones();
+
+Console.WriteLine("Fin Genericos");
