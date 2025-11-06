@@ -10,6 +10,7 @@ namespace ConceptosBasePOO.Abstraccion
     {
         public UsoAbstraccion()
         {
+            Console.WriteLine("\nABSTRACCION\n");
             FiguraAbstractaShape figura = new CirculoImpAbstraccion() { Color = "Rojo", Radio = 5 };
             Console.WriteLine($" Area de la figura {figura.CalcularArea()}");
             figura.MostrarColor();

@@ -10,7 +10,7 @@ namespace ConceptosBasePOO.AbstraccionInterfaces
     {
         public UsoAbstraccionInterfaz()
         {
-
+            Console.WriteLine("\nABSTRACCION INTERFAZ\n");
 
             var circulo = new Circulo { Color = "Rojo", Radio = 3 };
             var rectangulo = new Rectangulo { Color = "Azul", Ancho = 4, Alto = 5 };

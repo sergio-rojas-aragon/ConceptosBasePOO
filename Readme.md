@@ -66,4 +66,15 @@ Esto permite reutilizar código, extender funcionalidades y mantener una estructu
 
 ## Encapsulacion
 
+La encapsulación es el principio de ocultar los datos internos de un objeto y controlar cómo se accede o modifica esa información.
+
+Objetivo
+
+* Evitar acceso directo a los datos (por ejemplo, que se modifiquen sin control).
+* Asegurar consistencia en el estado del objeto.
+* Separar la implementación interna de la interfaz pública.
+
+Sin la encapsulacion no hay control ni valdacion sobre los datos. Esto Rompe la integridad del objeto.
+
+
 
