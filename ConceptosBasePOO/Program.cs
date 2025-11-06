@@ -3,6 +3,7 @@ using ConceptosBasePOO.Abstraccion;
 using ConceptosBasePOO.AbstraccionInterfaces;
 using ConceptosBasePOO.Encapsulacion;
 using ConceptosBasePOO.Herencia;
+using ConceptosBasePOO.Polimorfismo;
 
 Console.WriteLine("Hello, World!");
 var Abstraccion = new UsoAbstraccion();
@@ -22,3 +23,7 @@ Console.WriteLine("Fin UsoHerencia");
 var encapsulacion = new UsoEncapsulacion();
 Console.WriteLine("Fin Encapsulacion");
 
+// Polimorfismo
+
+var polimorfismo = new UsoPolimorfismo();
+Console.WriteLine("Fin Polimorfismo");

@@ -9,7 +9,10 @@ on:
     branches:
       - main
       - master
-  
+ 
+permissions:
+  contents: write # ¡Esto otorga permiso para escribir en el repositorio!
+ 
 # Define los trabajos (jobs) que se ejecutarán
 jobs:
   generateTOC:

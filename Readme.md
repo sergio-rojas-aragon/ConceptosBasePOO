@@ -76,5 +76,24 @@ Objetivo
 
 Sin la encapsulacion no hay control ni valdacion sobre los datos. Esto Rompe la integridad del objeto.
 
+## Polimorfismo
+
+Un mismo método o acción puede comportarse de distintas maneras según el tipo de objeto que lo ejecute.
+
+El polimorfismo permite tratar diferentes tipos de objetos de una misma familia (por herencia) como si fueran del mismo tipo, pero ejecutando el comportamiento propio de cada uno.
+
+Tipos de polimorfismo en C# / .NET
+
+| Tipo                                    | Cuándo ocurre                     | Cómo se implementa                                  |
+| --------------------------------------- | --------------------------------- | --------------------------------------------------- |
+| **En tiempo de compilación (estático)** | Durante la compilación            | *Sobrecarga de métodos* (`overloading`)             |
+| **En tiempo de ejecución (dinámico)**   | Durante la ejecución del programa | *Sobrescritura de métodos* (`virtual` / `override`) |
 
 
+Para que un método sea polimórfico:
+
+* Debe estar declarado como virtual o abstract en la clase base.
+* Debe sobrescribirse con override en la clase derivada.
+
+Si no usas virtual/override, C# no hará polimorfismo real,
+sino que llamará siempre al método de la clase base (esto se llama ocultamiento y se hace con new, no override).
