@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConceptosBasePOO.Abstraccion
 {
-    internal class ImplementacionAbstraccion : FiguraAbstracta
+    internal class CirculoImpAbstraccion : FiguraAbstractaShape
     {
         public double Radio { get; set; }
         public override double CalcularArea()

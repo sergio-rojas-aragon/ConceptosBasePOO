@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConceptosBasePOO.Abstraccion
 {
-    internal abstract class FiguraAbstracta
+    internal abstract class FiguraAbstractaShape
     {
         public string Color { get; set; }
         public abstract double CalcularArea();
