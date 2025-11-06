@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Conceptos Base en la Programacion Orientada a Objetos Aplicado](#conceptos-base-en-la-programacion-orientada-a-objetos-aplicado)
+  - [Abstraccion](#abstraccion)
+    - [Con clases abstractas](#con-clases-abstractas)
+    - [Con interfaces](#con-interfaces)
+  - [Herencia](#herencia)
+  - [Encapsulacion](#encapsulacion)
+  - [Polimorfismo](#polimorfismo)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Conceptos Base en la Programacion Orientada a Objetos Aplicado
 
 Para estos ejercicios se utilizo **.Net8** en una Consola Simple
@@ -7,22 +21,22 @@ Para estos ejercicios se utilizo **.Net8** en una Consola Simple
 
 ## Abstraccion
 
-La abstracción es un principio fundamental de la Programación Orientada a Objetos (POO) que consiste en:
+La abstracciï¿½n es un principio fundamental de la Programaciï¿½n Orientada a Objetos (POO) que consiste en:
 
-> Modelar solo los aspectos relevantes de un objeto, ocultando los detalles de implementación.
+> Modelar solo los aspectos relevantes de un objeto, ocultando los detalles de implementaciï¿½n.
 
 En otras palabras:
 
-* Te enfocas en qué hace un objeto, no cómo lo hace.
-* Permite simplificar sistemas complejos, exponiendo solo lo necesario a través de interfaces o clases abstractas.
+* Te enfocas en quï¿½ hace un objeto, no cï¿½mo lo hace.
+* Permite simplificar sistemas complejos, exponiendo solo lo necesario a travï¿½s de interfaces o clases abstractas.
 
-En .NET puedes aplicar abstracción de dos maneras principales:
+En .NET puedes aplicar abstracciï¿½n de dos maneras principales:
 
 ### Con clases abstractas
 
 * Son clases base que no pueden instanciarse.
-* Pueden definir métodos implementados y no implementados.
-* Los métodos abstractos deben implementarse en las clases derivadas.
+* Pueden definir mï¿½todos implementados y no implementados.
+* Los mï¿½todos abstractos deben implementarse en las clases derivadas.
 
 El ejemplo se puede encontrar en la carpeta `Abstraccion`
 
@@ -33,16 +47,16 @@ Se puede aplicar Abstraccion utilizando interfaces siguiendo este orden:
 Interfaz => Abstraccion => Clase a implementar
 
 * Una interfaz define un contrato que las clases deben cumplir.
-* No tiene lógica interna ni estado, solo firmas de métodos o propiedades.
-* Una clase puede implementar múltiples interfaces (a diferencia de la herencia simple).
+* No tiene lï¿½gica interna ni estado, solo firmas de mï¿½todos o propiedades.
+* Una clase puede implementar mï¿½ltiples interfaces (a diferencia de la herencia simple).
 
 **Diferencias entre Abstraccion y Encapsulacion**
 
 
-| Concepto          | Qué hace                                                             | Cómo se aplica                          |
+| Concepto          | Quï¿½ hace                                                             | Cï¿½mo se aplica                          |
 | ----------------- | -------------------------------------------------------------------- | --------------------------------------- |
-| **Encapsulación** | Oculta los **datos** internos de un objeto                           | Uso de `private`, `public`, propiedades |
-| **Abstracción**   | Oculta los **detalles de implementación** y muestra solo lo esencial | Clases abstractas, interfaces           |
+| **Encapsulaciï¿½n** | Oculta los **datos** internos de un objeto                           | Uso de `private`, `public`, propiedades |
+| **Abstracciï¿½n**   | Oculta los **detalles de implementaciï¿½n** y muestra solo lo esencial | Clases abstractas, interfaces           |
 
 
 
@@ -52,48 +66,48 @@ El ejemplo se puede encontrar en la carpeta `AbstraccionInterfaces`
 
 ## Herencia
 
-Crear una nueva clase (derivada o hija) a partir de una clase existente (base o padre), heredando sus propiedades, métodos y comportamiento.
+Crear una nueva clase (derivada o hija) a partir de una clase existente (base o padre), heredando sus propiedades, mï¿½todos y comportamiento.
 
-Esto permite reutilizar código, extender funcionalidades y mantener una estructura jerárquica en el diseño.
+Esto permite reutilizar cï¿½digo, extender funcionalidades y mantener una estructura jerï¿½rquica en el diseï¿½o.
 
 
-| Término                   | Significado                                                                                                           |
+| Tï¿½rmino                   | Significado                                                                                                           |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Clase base (padre)**    | La clase original que contiene atributos y métodos comunes.                                                           |
+| **Clase base (padre)**    | La clase original que contiene atributos y mï¿½todos comunes.                                                           |
 | **Clase derivada (hija)** | La clase que hereda de la base y puede agregar o modificar comportamiento.                                            |
 | **Herencia simple**       | En C#, una clase **solo puede heredar de una clase base**.                                                            |
-| **Palabras clave**        | `:` (dos puntos) para heredar, `base` para acceder al constructor o métodos del padre, `override` para sobreescribir. |
+| **Palabras clave**        | `:` (dos puntos) para heredar, `base` para acceder al constructor o mï¿½todos del padre, `override` para sobreescribir. |
 
 ## Encapsulacion
 
-La encapsulación es el principio de ocultar los datos internos de un objeto y controlar cómo se accede o modifica esa información.
+La encapsulaciï¿½n es el principio de ocultar los datos internos de un objeto y controlar cï¿½mo se accede o modifica esa informaciï¿½n.
 
 Objetivo
 
 * Evitar acceso directo a los datos (por ejemplo, que se modifiquen sin control).
 * Asegurar consistencia en el estado del objeto.
-* Separar la implementación interna de la interfaz pública.
+* Separar la implementaciï¿½n interna de la interfaz pï¿½blica.
 
 Sin la encapsulacion no hay control ni valdacion sobre los datos. Esto Rompe la integridad del objeto.
 
 ## Polimorfismo
 
-Un mismo método o acción puede comportarse de distintas maneras según el tipo de objeto que lo ejecute.
+Un mismo mï¿½todo o acciï¿½n puede comportarse de distintas maneras segï¿½n el tipo de objeto que lo ejecute.
 
 El polimorfismo permite tratar diferentes tipos de objetos de una misma familia (por herencia) como si fueran del mismo tipo, pero ejecutando el comportamiento propio de cada uno.
 
 Tipos de polimorfismo en C# / .NET
 
-| Tipo                                    | Cuándo ocurre                     | Cómo se implementa                                  |
+| Tipo                                    | Cuï¿½ndo ocurre                     | Cï¿½mo se implementa                                  |
 | --------------------------------------- | --------------------------------- | --------------------------------------------------- |
-| **En tiempo de compilación (estático)** | Durante la compilación            | *Sobrecarga de métodos* (`overloading`)             |
-| **En tiempo de ejecución (dinámico)**   | Durante la ejecución del programa | *Sobrescritura de métodos* (`virtual` / `override`) |
+| **En tiempo de compilaciï¿½n (estï¿½tico)** | Durante la compilaciï¿½n            | *Sobrecarga de mï¿½todos* (`overloading`)             |
+| **En tiempo de ejecuciï¿½n (dinï¿½mico)**   | Durante la ejecuciï¿½n del programa | *Sobrescritura de mï¿½todos* (`virtual` / `override`) |
 
 
-Para que un método sea polimórfico:
+Para que un mï¿½todo sea polimï¿½rfico:
 
 * Debe estar declarado como virtual o abstract en la clase base.
 * Debe sobrescribirse con override en la clase derivada.
 
-Si no usas virtual/override, C# no hará polimorfismo real,
-sino que llamará siempre al método de la clase base (esto se llama ocultamiento y se hace con new, no override).
+Si no usas virtual/override, C# no harï¿½ polimorfismo real,
+sino que llamarï¿½ siempre al mï¿½todo de la clase base (esto se llama ocultamiento y se hace con new, no override).
