@@ -2,8 +2,20 @@
 
 Para estos ejercicios se utilizo **.Net8** en una Consola Simple
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Abstraccion](#abstraccion)
+  - [Con clases abstractas](#con-clases-abstractas)
+  - [Con interfaces](#con-interfaces)
+- [Herencia](#herencia)
+- [Encapsulacion](#encapsulacion)
+- [Polimorfismo](#polimorfismo)
+- [Genericos](#genericos)
+  - [Restricciones](#restricciones)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Abstraccion
 
