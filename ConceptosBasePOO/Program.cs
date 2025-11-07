@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConceptosBasePOO.Abstraccion;
 using ConceptosBasePOO.AbstraccionInterfaces;
+using ConceptosBasePOO.CicloVIda;
 using ConceptosBasePOO.Encapsulacion;
 using ConceptosBasePOO.Genericos;
 using ConceptosBasePOO.Herencia;
@@ -36,3 +37,9 @@ var genericoRepositorio= new UsoGenericoRepositorio();
 var genericoRestricciones = new UsoGenericoRestricciones();
 
 Console.WriteLine("Fin Genericos");
+
+
+// Ciclo de vida
+
+var destructores = new UsoCicloVida();
+Console.WriteLine("Fin Ciclo de vida");

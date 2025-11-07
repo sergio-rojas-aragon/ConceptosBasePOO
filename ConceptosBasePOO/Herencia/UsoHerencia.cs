@@ -10,7 +10,7 @@ namespace ConceptosBasePOO.Herencia
     {
         public UsoHerencia()
         {
-            Console.WriteLine("\n\nHERENCIA\n");
+            Console.WriteLine("\nHERENCIA\n");
             Cuadrado c = new Cuadrado();
             c.Nombre = "Cuadrado";
             c.Color = "Rojo";
